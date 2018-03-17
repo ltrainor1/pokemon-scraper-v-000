@@ -21,7 +21,7 @@ def self.find(id = @id, db = @db)
     p.alter_hp(59, db)
   elsif p.name == "Magikarp"
     p.alter_hp(0, db)
-  end 
+  end
   p
 
 end
