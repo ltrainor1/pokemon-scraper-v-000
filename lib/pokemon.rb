@@ -6,7 +6,6 @@ def initialize(name = @name, type = @type, db = @db, hp = nil)
   @name = name
   @type = type
   @db = db
-  @hp = 60
 end
 
   def self.save(name = @name, type = @type, db = @db, hp = @hp)
