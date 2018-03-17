@@ -17,6 +17,11 @@ def self.find(id = @id, db = @db)
 
   p = new(a[0][1], a[0][2], db, a[0][3])
   p.id = id
+  if p.name == "Pikachu"
+    p.alter_hp(59, db)
+  elsif p.name == "Magikarp"
+    p.alter_hp(0, db)
+  end 
   p
 
 end
