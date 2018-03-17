@@ -22,7 +22,7 @@ def self.find(id = @id, db = @db)
 
 end
 
-def alter_hp(hp, db)
+def alter_hp(p, db)
   if p.name == "Pikachu"
     p.hp = 59
   elsif p.name == "Magikarp"
