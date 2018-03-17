@@ -17,7 +17,7 @@ def self.find(id = @id, db = @db)
 
   p = new(a[0][1], a[0][2], db, a[0][3])
   p.id = id
-  p.alter_hp(@hp, db)
+  p.alter_hp(self, db)
   p
 
 end
