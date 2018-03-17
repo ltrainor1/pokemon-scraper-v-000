@@ -17,19 +17,12 @@ def self.find(id = @id, db = @db)
 
   p = new(a[0][1], a[0][2], db, a[0][3])
   p.id = id
-  p.alter_hp(self, db)
   p
 
 end
 
-def alter_hp(p, db)
-  if p.name == "Pikachu"
-    p.hp = 59
-  elsif p.name == "Magikarp"
-    p.hp = 0
-  else
-    p.hp = 60
-  end
+def alter_hp(hp, db)
+    self.hp = hp
 end
 
 end
